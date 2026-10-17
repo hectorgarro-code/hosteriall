@@ -1,0 +1,58 @@
+import { Room } from '@/types';
+
+// Categories and photographs from the owner's public website.
+// Conditions for 2027 are confirmed when quoting, not inferred here.
+export const roomsData: Room[] = [
+  {
+    id: 'doble-estandar', slug: 'doble-estandar', name: 'Doble Estándar',
+    categoryName: 'Para viajar de a dos', capacity: 2, capacityLabel: '2 personas',
+    bedConfig: 'Cama matrimonial', featuredHighlight: 'Una pausa de a dos',
+    shortDescription: 'Una opción para parejas que buscan descansar y disfrutar La Lucila del Mar a su propio ritmo.',
+    fullDescription: 'La Doble Estándar es una de nuestras categorías para dos personas. En las fotos podés conocer el ambiente, la cama matrimonial y el rincón con mesa junto a la ventana. Contanos tus fechas para consultar disponibilidad, equipamiento y condiciones de la estadía.',
+    mainImage: '/images/real/doble-estandar-768x576.webp',
+    gallery: ['/images/real/doble-estandar-768x576.webp'],
+    amenities: [{ icon: 'bed', label: 'Cama matrimonial' }, { icon: 'tv', label: 'Televisor' }, { icon: 'wifi', label: 'Wi-Fi sin cargo' }, { icon: 'coffee', label: 'Desayuno incluido' }],
+    specifications: [{ title: 'Capacidad', value: '2 personas' }, { title: 'Categoría', value: 'Doble Estándar' }, { title: 'Tu estadía', value: 'Consultá fechas y condiciones por WhatsApp' }],
+    seoTitle: 'Habitación Doble Estándar',
+    seoDescription: 'Conocé la Doble Estándar de Hostería La Lucila con fotografías reales. Consultá tu estadía para dos personas en La Lucila del Mar.',
+  },
+  {
+    id: 'triple-estandar', slug: 'triple-estandar', name: 'Triple Estándar',
+    categoryName: 'Para compartir el descanso', capacity: 3, capacityLabel: '3 personas',
+    bedConfig: 'Cama matrimonial y cama simple', featuredHighlight: 'Para un viaje de a tres',
+    shortDescription: 'Una alternativa para familias pequeñas o para quienes viajan de a tres y quieren sentirse como en casa.',
+    fullDescription: 'La Triple Estándar combina una cama matrimonial y una cama simple en un mismo ambiente. Las fotografías muestran su distribución y el espacio con mesa y sillas. Consultanos por esta categoría con tus fechas y la cantidad de personas que viajan; te contamos las opciones y el equipamiento disponible.',
+    mainImage: '/images/real/triple-estandar-768x576.webp',
+    gallery: ['/images/real/triple-estandar-768x576.webp', '/images/real/6-768x768.webp'],
+    amenities: [{ icon: 'bed', label: 'Cama matrimonial y simple' }, { icon: 'tv', label: 'Televisor' }, { icon: 'wifi', label: 'Wi-Fi sin cargo' }, { icon: 'coffee', label: 'Desayuno incluido' }],
+    specifications: [{ title: 'Capacidad', value: '3 personas' }, { title: 'Categoría', value: 'Triple Estándar' }, { title: 'Espacios comunes', value: 'Salón comedor, parque y quincho' }],
+    seoTitle: 'Habitación Triple Estándar',
+    seoDescription: 'Fotografías reales de la Triple Estándar de Hostería La Lucila. Una opción para tres personas; consultá fechas y condiciones para verano 2027.',
+  },
+  {
+    id: 'triple-parque', slug: 'triple-parque', name: 'Triple Parque',
+    categoryName: 'Descanso en un entorno verde', capacity: 3, capacityLabel: '3 personas',
+    bedConfig: 'Cama matrimonial y cama simple', featuredHighlight: 'El parque como parte de tu estadía',
+    shortDescription: 'La categoría Triple Parque, para compartir unos días de descanso en el ambiente familiar de la hostería.',
+    fullDescription: 'En la Triple Parque encontrás una cama matrimonial y una cama simple. Las fotos de esta categoría muestran su distribución, los detalles de madera y sus ventanas. Escribinos para conocer disponibilidad y equipamiento para tus fechas; te ayudamos a elegir la opción que mejor se adapte a tu viaje.',
+    mainImage: '/images/real/triple-parque-768x576.webp',
+    gallery: ['/images/real/triple-parque-768x576.webp', '/images/real/3-768x768.webp', '/images/real/bano-doble-o-triple-parque-768x576.webp'],
+    amenities: [{ icon: 'bed', label: 'Cama matrimonial y simple' }, { icon: 'bath', label: 'Baño privado' }, { icon: 'wifi', label: 'Wi-Fi sin cargo' }, { icon: 'coffee', label: 'Desayuno incluido' }],
+    specifications: [{ title: 'Capacidad', value: '3 personas' }, { title: 'Categoría', value: 'Triple Parque' }, { title: 'Tu viaje', value: 'Contanos si viajás con chicos y sus edades' }],
+    seoTitle: 'Habitación Triple Parque',
+    seoDescription: 'Descubrí la Triple Parque de Hostería La Lucila con sus fotografías reales. Consultá tu próxima estadía familiar en La Lucila del Mar.',
+  },
+  {
+    id: 'triple-balcon', slug: 'triple-balcon', name: 'Triple con Balcón',
+    categoryName: 'Un momento al aire libre', capacity: 3, capacityLabel: '3 personas',
+    bedConfig: 'Cama matrimonial y cama simple', featuredHighlight: 'Con balcón',
+    shortDescription: 'Una habitación para tres personas con balcón, para sumar una pausa al aire libre a tus vacaciones.',
+    fullDescription: 'La Triple con Balcón es otra de las opciones de la hostería para tres personas. Mirá las fotografías del interior y la vista desde el balcón para conocerla antes de consultar. Enviando tus fechas y la cantidad de huéspedes podemos orientarte sobre disponibilidad, equipamiento y condiciones.',
+    mainImage: '/images/real/triple-balcon-768x576.webp',
+    gallery: ['/images/real/triple-balcon-768x576.webp', '/images/real/5-768x768.webp', '/images/real/vista-balcon-768x576.webp'],
+    amenities: [{ icon: 'door-open', label: 'Balcón' }, { icon: 'bed', label: 'Cama matrimonial y simple' }, { icon: 'tv', label: 'Televisor' }, { icon: 'wifi', label: 'Wi-Fi sin cargo' }, { icon: 'coffee', label: 'Desayuno incluido' }],
+    specifications: [{ title: 'Capacidad', value: '3 personas' }, { title: 'Categoría', value: 'Triple con Balcón' }, { title: 'Disponibilidad', value: 'Consultar para las fechas de tu viaje' }],
+    seoTitle: 'Habitación Triple con Balcón',
+    seoDescription: 'Conocé la Triple con Balcón de Hostería La Lucila. Fotos del interior y de la vista; consultas personalizadas para el verano 2027.',
+  },
+];

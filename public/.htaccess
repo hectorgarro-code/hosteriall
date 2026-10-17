@@ -1,0 +1,11 @@
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Preserve the old public WordPress article URLs after the replacement.
+  RewriteRule ^index\.php/2019/05/17/muelle-la-lucila/?$ /la-lucila-del-mar/ [R=301,L]
+  RewriteRule ^index\.php/2019/05/17/escapada-romantica/?$ /habitaciones/ [R=301,L]
+  RewriteRule ^index\.php/blog/?$ /la-lucila-del-mar/ [R=301,L]
+  RewriteRule ^index\.php/?$ / [R=301,L]
+</IfModule>

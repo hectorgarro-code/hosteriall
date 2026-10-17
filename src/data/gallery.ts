@@ -1,0 +1,25 @@
+import { GalleryPhoto } from '@/types';
+
+export const galleryData: GalleryPhoto[] = [
+  { id: 'pileta-patio', src: '/images/real/resized_dsc_0013-scaled.webp', alt: 'Pileta al aire libre con el parque y los quinchos de la hostería al fondo', category: 'pileta', title: 'Pileta y parque' },
+  { id: 'parque-quincho', src: '/images/real/resized_pa232504.webp', alt: 'Mesas, reposeras y quincho junto a un árbol en el parque', category: 'parque', title: 'El parque también es descanso' },
+  { id: 'doble', src: '/images/real/doble-estandar-768x576.webp', alt: 'Interior de la Doble Estándar con mesa y sillas junto a la ventana', category: 'habitaciones', title: 'Doble Estándar' },
+  { id: 'triple', src: '/images/real/triple-estandar-768x576.webp', alt: 'Habitación Triple Estándar con camas, mesa y televisor', category: 'habitaciones', title: 'Triple Estándar' },
+  { id: 'triple-parque', src: '/images/real/triple-parque-768x576.webp', alt: 'Triple Parque con cama matrimonial y cama simple de madera', category: 'habitaciones', title: 'Triple Parque' },
+  { id: 'triple-balcon', src: '/images/real/triple-balcon-768x576.webp', alt: 'Interior de la Triple con Balcón, con sus camas y la puerta hacia el exterior', category: 'habitaciones', title: 'Triple con Balcón' },
+  { id: 'vista-balcon', src: '/images/real/vista-balcon-768x576.webp', alt: 'Vista del entorno desde el balcón de la hostería', category: 'habitaciones', title: 'La vista desde el balcón' },
+  { id: 'bano-parque', src: '/images/real/bano-doble-o-triple-parque-768x576.webp', alt: 'Baño con ducha, lavatorio y sanitarios de una habitación de la hostería', category: 'habitaciones', title: 'Baño de habitación' },
+  { id: 'desayuno-mesa', src: '/images/real/tam_inst-30.webp', alt: 'Mesa de desayuno con tazas, infusiones y una canasta de panificados', category: 'desayuno', title: 'Una mañana sin apuro' },
+  { id: 'desayuno-detalle', src: '/images/real/tam_inst-4.webp', alt: 'Canastas con panificados sobre la mesa del desayuno', category: 'desayuno', title: 'Desayunos caseros' },
+  { id: 'comedor', src: '/images/real/resized_pa232556.webp', alt: 'Salón comedor con mesas, sillas y equipamiento de uso común', category: 'espacios', title: 'Salón comedor' },
+  { id: 'comedor-otra-vista', src: '/images/real/resized_pa232558.webp', alt: 'Vista de las mesas del salón comedor desde otro ángulo', category: 'espacios', title: 'Un espacio para compartir' },
+  { id: 'equipamiento-comun', src: '/images/real/resized_dsc_0428-scaled.webp', alt: 'Heladera, microondas y equipamiento del salón común', category: 'espacios', title: 'Comodidades de uso compartido' },
+  { id: 'estar', src: '/images/real/resized_dsc_0437-scaled.webp', alt: 'Sillones y televisor en el espacio de estar de la hostería', category: 'espacios', title: 'Un rato en el salón' },
+  { id: 'biblioteca', src: '/images/real/resized_dsc_0445-scaled.webp', alt: 'Estantes con libros en el espacio común de la hostería', category: 'espacios', title: 'Tiempo para leer' },
+  { id: 'parque-mesas', src: '/images/real/tam_inst-19.webp', alt: 'Mesas bajo un sector de sombra en el parque', category: 'parque', title: 'Mesas al aire libre' },
+  { id: 'parque-habitaciones', src: '/images/real/tam_inst-20.webp', alt: 'Exterior de habitaciones junto al parque de la hostería', category: 'parque', title: 'El entorno de la hostería' },
+  { id: 'pileta-otra-vista', src: '/images/real/tam_inst-17.webp', alt: 'Pileta al aire libre rodeada de vegetación', category: 'pileta', title: 'La pileta en temporada' },
+  { id: 'pileta-frente', src: '/images/real/tam_inst-33.webp', alt: 'Pileta con las instalaciones de la hostería al fondo', category: 'pileta', title: 'Un lugar para bajar un cambio' },
+  { id: 'entrada', src: '/images/real/resized_pa232545.webp', alt: 'Acceso a la hostería y camino junto al parque', category: 'espacios', title: 'Te esperamos en La Lucila' },
+  { id: 'muelle', src: '/images/real/tam_inst-34.webp', alt: 'Muelle de La Lucila del Mar y cielo de colores sobre el mar', category: 'destino', title: 'El muelle de La Lucila del Mar' },
+];
