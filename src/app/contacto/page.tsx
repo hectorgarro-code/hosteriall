@@ -10,6 +10,8 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import { InstagramIcon, FacebookIcon } from '@/components/SocialIcons';
+import { FaqAccordion } from '@/components/FaqAccordion';
+import { StayConditions } from '@/components/StayConditions';
 import { siteConfig } from '@/data/config';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { trackEvent } from '@/lib/analytics';
@@ -385,6 +387,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <section id="preguntas-frecuentes" className="section section-bg-alt"><div className="container"><h2 className="section-title">Información para tu estadía</h2><StayConditions /><FaqAccordion /></div></section>
     </>
   );
 }

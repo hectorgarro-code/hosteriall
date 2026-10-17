@@ -27,8 +27,9 @@ for (const filename of ['robots.txt', 'sitemap.xml', '.htaccess', '404.html', 'f
 const home = await fs.readFile('out/index.html', 'utf8');
 assert.ok(home.includes('Desayuno incluido'));
 assert.ok(home.includes('Mascotas permitidas'));
-assert.ok(home.includes('efectivo') || home.includes('Efectivo'));
-assert.ok(home.includes('Reserva con seña'));
+const contact = await fs.readFile('out/contacto/index.html', 'utf8');
+assert.ok(contact.includes('efectivo') || contact.includes('Efectivo'));
+assert.ok(contact.includes('Reserva con seña'));
 assert.ok(!home.includes('2027-01-10'), 'Fixed inquiry dates');
 
 // Exercise the actual WhatsApp formatter with a family inquiry and a generic

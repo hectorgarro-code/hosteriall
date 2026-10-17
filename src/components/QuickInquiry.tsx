@@ -17,7 +17,7 @@ function nextDay(value: string) {
   return date.toISOString().slice(0, 10);
 }
 
-export function QuickInquiry({ initialRoom, variant = 'hero' }: { initialRoom?: string; variant?: 'hero' | 'standalone' }) {
+export function QuickInquiry({ initialRoom, variant = 'hero', showRoom = true }: { initialRoom?: string; variant?: 'hero' | 'standalone'; showRoom?: boolean }) {
   const id = useId();
   const [today, setToday] = useState('');
   const [checkIn, setCheckIn] = useState('');
@@ -73,18 +73,19 @@ export function QuickInquiry({ initialRoom, variant = 'hero' }: { initialRoom?: 
           <label className="form-label" htmlFor={id + '-ages'}>Edades de los chicos (opcional)</label>
           <input id={id + '-ages'} className="form-input" value={childrenAges} maxLength={80} placeholder="Por ejemplo: 4 y 8 años" onChange={event => setChildrenAges(event.target.value)} />
         </div>}
-        <div className="form-group">
+        {showRoom && <div className="form-group">
           <label className="form-label" htmlFor={id + '-room'}>Habitación (opcional)</label>
           <select id={id + '-room'} className="form-select" value={room} onChange={event => setRoom(event.target.value)}>
             <option value="">Ayudame a elegir</option>
             {roomsData.map(item => <option key={item.id} value={item.name}>{item.name} · {item.capacityLabel}</option>)}
           </select>
-        </div>
+        </div>}
         {largerGroup && <p className="form-note">Esta categoría es para {selectedRoom.capacityLabel}. Podés consultar opciones para varias habitaciones.</p>}
         {error && <p className="form-error" role="alert">{error}</p>}
         <button className="btn btn-whatsapp inquiry-submit" type="submit"><MessageCircle size={19} /> Consultar por WhatsApp <ArrowRight size={17} /></button>
         <p className="form-disclaimer">Se abre WhatsApp con tu mensaje. La consulta no confirma una reserva.</p>
       </form>
+      {variant === 'standalone' && !showRoom && <a className="text-link inquiry-direct-link" href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer">Prefiero consultar sin completar fechas <ArrowRight size={17} /></a>}
     </div>
   );
 }

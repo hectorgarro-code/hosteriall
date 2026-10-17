@@ -10,16 +10,21 @@ export function FloatingWhatsApp() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Solo mostrar después de hacer scroll pasando el Hero inicial
-      if (window.scrollY > 450) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      // Evitar que el acceso flotante cubra un formulario visible.
+      const inquiryVisible = [...document.querySelectorAll('.quick-inquiry')].some(card => {
+        const rect = card.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      });
+      setIsVisible(window.scrollY > 450 && !inquiryVisible);
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   const handleClick = () => {

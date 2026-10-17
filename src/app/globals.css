@@ -499,3 +499,52 @@ h1, h2, h3, h4, .font-serif {
 .stay-conditions { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding: 2rem 0; border-bottom: 1px solid var(--color-border); }
 .stay-conditions > div { display: flex; align-items: center; gap: .6rem; color: var(--color-petrol-primary); font-size: .85rem; }
 .stay-conditions svg { flex-shrink: 0; }
+
+/* Inicio y campaña: recorridos breves, fotos y accesos al detalle. */
+.home-essentials { padding: 1.8rem 0; border-bottom: 1px solid var(--color-border); }
+.essential-benefits { display: flex; flex-wrap: wrap; gap: 1.2rem 2rem; margin-bottom: 1rem; }
+.essential-benefits span { display: flex; align-items: center; gap: .7rem; font-size: 1rem; color: var(--color-petrol-primary); }
+.essential-benefits svg { flex-shrink: 0; }
+.home-preview { padding-top: 3rem; padding-bottom: 3rem; }
+.home-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.home-photo-link { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-md); }
+.home-photo-link img, .campaign-photo img { object-fit: cover; }
+.home-photo-link span { position: absolute; inset: auto 0 0; padding: 2.5rem 1rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: .5rem; color: white; font-size: 1rem; font-weight: 600; background: linear-gradient(transparent, #082718ed); }
+.home-photo-link:focus-visible { outline: 3px solid var(--color-petrol-primary); outline-offset: 4px; }
+.direct-contact { display: grid; grid-template-columns: 1.3fr 1fr; align-items: center; gap: 2rem; }
+.direct-contact p { margin: .8rem 0 1rem; }
+.direct-contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+.campaign-direct { padding: 2.5rem 0; }
+.campaign-direct .editorial-grid { align-items: start; gap: 3rem; }
+.campaign-direct h1 { font-size: clamp(2.2rem, 4vw, 3.3rem); margin: .6rem 0 .8rem; }
+.campaign-summary > p { font-size: 1.05rem; }
+.campaign-photo { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-md); overflow: hidden; margin: 1.5rem 0 1rem; }
+.campaign-summary .campaign-benefits { font-size: 1rem; font-weight: 600; color: var(--color-petrol-primary); }
+.campaign-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1rem; }
+.campaign-links .text-link, .inquiry-direct-link { min-height: 44px; }
+.campaign-direct .form-label { font-size: .9rem; }
+.campaign-direct .form-disclaimer { font-size: .85rem; }
+.campaign-direct .inquiry-submit { margin-top: 0; }
+.inquiry-direct-link { margin-top: 1rem; font-size: .95rem; }
+@media (max-width: 800px) {
+  .direct-contact { grid-template-columns: minmax(0, 1fr); }
+  .campaign-direct { padding: 1.5rem 0; }
+  .campaign-direct .editorial-grid { gap: .75rem; }
+  .campaign-summary { display: contents; }
+  .campaign-summary > .eyebrow, .campaign-summary > h1, .campaign-summary > p:not(.campaign-benefits) { order: 1; }
+  .campaign-direct h1 { margin: 0; }
+  #consulta-verano { order: 2; margin-top: .5rem; }
+  .campaign-summary .campaign-benefits { order: 3; }
+  .campaign-summary .campaign-links { order: 4; }
+  .campaign-direct .campaign-photo { display: none; }
+  .campaign-direct .campaign-benefits { margin-top: 1rem; }
+  .campaign-direct .campaign-links { margin-top: .5rem; }
+}
+@media (max-width: 650px) {
+  .home-photo-grid { grid-template-columns: minmax(0, 1fr); }
+  .home-photo-link { aspect-ratio: 16 / 9; }
+  .home-preview .section-heading-row { gap: 1rem; margin-bottom: 1.5rem; }
+  .direct-contact-actions .btn { width: 100%; }
+  footer { padding-bottom: calc(6rem + env(safe-area-inset-bottom)) !important; }
+  .floating-whatsapp { bottom: calc(1rem + env(safe-area-inset-bottom)); }
+}
