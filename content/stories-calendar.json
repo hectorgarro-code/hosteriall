@@ -1,0 +1,159 @@
+[
+  {
+    "id": "LL-ST-20261019",
+    "date": "2026-10-19",
+    "time": "12:30",
+    "timezone": "America/Buenos_Aires",
+    "campaign": "Un verano a tu ritmo · Verano 2027",
+    "category": "Descubrimiento",
+    "objective": "Presentar el lugar y asociar el verano con descanso real.",
+    "platforms": [
+      "Instagram",
+      "Facebook"
+    ],
+    "slides": [
+      {
+        "id": "LL-ST-20261019-s1",
+        "template": "StoryHero",
+        "title": "Un verano a tu ritmo.",
+        "body": "Tiempo para descansar en La Lucila del Mar.",
+        "cta": "Conocé nuestro lugar.",
+        "photo": "/images/real/resized_dsc_0013-scaled.webp"
+      },
+      {
+        "id": "LL-ST-20261019-s2",
+        "template": "StoryCTA",
+        "title": "Tu próxima pausa.",
+        "body": "Contanos fechas y cuántas personas viajan.",
+        "cta": "Consultanos por mensaje. · Verano 2027"
+      }
+    ],
+    "assets": [],
+    "interaction": {
+      "type": "NONE",
+      "nativeRequired": false
+    },
+    "publishMode": "BROWSER_META_SESSION",
+    "status": "DRAFT",
+    "metaPostId": null,
+    "error": null
+  },
+  {
+    "id": "LL-ST-20261020",
+    "date": "2026-10-20",
+    "time": "12:30",
+    "timezone": "America/Buenos_Aires",
+    "campaign": "Un verano a tu ritmo · Verano 2027",
+    "category": "Destino",
+    "objective": "Mostrar el destino y facilitar una primera consulta sin depender de material nuevo.",
+    "platforms": [
+      "Instagram",
+      "Facebook"
+    ],
+    "slides": [
+      {
+        "id": "LL-ST-20261020-s1",
+        "template": "StoryDestination",
+        "title": "La Lucila te espera.",
+        "body": "Playa, muelle y tiempo para pasear sin apuro.",
+        "cta": "Guardá esta idea para el verano.",
+        "photo": "/images/real/tam_inst-34.webp"
+      },
+      {
+        "id": "LL-ST-20261020-s2",
+        "template": "StoryFeature",
+        "eyebrow": "Nuestro lugar",
+        "title": "El mar cerca.",
+        "body": "Estamos en San Juan 4818, a dos cuadras de la playa.",
+        "cta": "Cómo llegar: hosterialalucila.com.ar"
+      }
+    ],
+    "assets": [],
+    "interaction": {
+      "type": "NONE",
+      "nativeRequired": false
+    },
+    "publishMode": "BROWSER_META_SESSION",
+    "status": "DRAFT",
+    "metaPostId": null,
+    "error": null
+  },
+  {
+    "id": "LL-ST-20261022",
+    "date": "2026-10-22",
+    "time": "12:30",
+    "timezone": "America/Buenos_Aires",
+    "campaign": "Un verano a tu ritmo · Verano 2027",
+    "category": "Servicios",
+    "objective": "Comunicar beneficios confirmados con poco texto y fotos reales.",
+    "platforms": [
+      "Instagram",
+      "Facebook"
+    ],
+    "slides": [
+      {
+        "id": "LL-ST-20261022-s1",
+        "template": "StoryPhoto",
+        "title": "Una mañana sin apuro.",
+        "body": "El desayuno está incluido en tu estadía.",
+        "cta": "Un verano a tu ritmo.",
+        "photo": "/images/real/tam_inst-30.webp"
+      },
+      {
+        "id": "LL-ST-20261022-s2",
+        "template": "StoryChecklist",
+        "title": "Para sentirte en casa.",
+        "body": "Desayuno incluido. Mascotas permitidas. Parque y quincho.",
+        "cta": "Consultanos por tu verano 2027."
+      }
+    ],
+    "assets": [],
+    "interaction": {
+      "type": "NONE",
+      "nativeRequired": false
+    },
+    "publishMode": "BROWSER_META_SESSION",
+    "status": "DRAFT",
+    "metaPostId": null,
+    "error": null
+  },
+  {
+    "id": "LL-ST-20261024",
+    "date": "2026-10-24",
+    "time": "12:30",
+    "timezone": "America/Buenos_Aires",
+    "campaign": "Un verano a tu ritmo · Verano 2027",
+    "category": "Deseo y consulta",
+    "objective": "Generar cercanía y facilitar la consulta sin encuestas ni stickers falsos.",
+    "platforms": [
+      "Instagram",
+      "Facebook"
+    ],
+    "slides": [
+      {
+        "id": "LL-ST-20261024-s1",
+        "template": "StoryQuestion",
+        "eyebrow": "Pregunta difícil del verano",
+        "title": "¿Playa o pileta?",
+        "body": "Nosotros elegimos las dos. Cada día, a tu ritmo.",
+        "cta": "Imaginá tu próximo verano."
+      },
+      {
+        "id": "LL-ST-20261024-s2",
+        "template": "StoryCTA",
+        "title": "Empezá por una consulta.",
+        "body": "Decinos cuándo y con quién viajarías.",
+        "cta": "Consultanos por mensaje. · Verano 2027"
+      }
+    ],
+    "assets": [],
+    "interaction": {
+      "type": "NONE",
+      "nativeRequired": false
+    },
+    "publishMode": "BROWSER_META_SESSION",
+    "status": "DRAFT",
+    "metaPostId": null,
+    "error": null
+  }
+]

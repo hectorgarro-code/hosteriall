@@ -1,5 +1,7 @@
 # Hostería La Lucila · Web Verano 2027
 
+Panel editorial local de Stories: [instrucciones del piloto](content/SOCIAL_PILOT.md), [auditoría Meta](content/META_PUBLISHING_AUDIT.md) y [contrato del operador](content/SOCIAL_OPERATOR.md). Se inicia con `npm run social:preview`; no forma parte del despliegue estático.
+
 Sitio de presentación y consultas para Hostería La Lucila, La Lucila del Mar. Preparado como **exportación estática compatible con Hostinger Premium**, sin Node.js en el hosting.
 
 ## Desarrollo y compilación local

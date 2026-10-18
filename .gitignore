@@ -43,3 +43,6 @@ next-env.d.ts
 
 # local assets
 WEB ORIGINAL/
+
+# Internal editorial runtime: approvals, receipts and private Meta identifiers
+/.social-private/
