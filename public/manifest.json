@@ -1,0 +1,23 @@
+{
+  "name": "Hostería La Lucila",
+  "short_name": "Hostería La Lucila",
+  "description": "Un lugar familiar en La Lucila del Mar, con desayuno incluido, parque, pileta climatizada en verano y la calidez de sentirte como en casa.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#155B38",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/images/real/cropped-logo-hosteria-1.webp",
+      "sizes": "500x500",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

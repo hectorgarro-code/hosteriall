@@ -46,3 +46,6 @@ WEB ORIGINAL/
 
 # Internal editorial runtime: approvals, receipts and private Meta identifiers
 /.social-private/
+
+# Isolated V2 editorial preview: generated media and downloaded licensed sources
+/social-preview-v2/

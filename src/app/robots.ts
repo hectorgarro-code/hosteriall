@@ -4,5 +4,23 @@ import { siteConfig } from '@/data/config';
 export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
-  return { rules: { userAgent: '*', allow: '/' }, sitemap: siteConfig.url + '/sitemap.xml' };
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/'],
+      },
+      {
+        userAgent: ['Googlebot', 'Bingbot', 'Applebot', 'DuckDuckBot'],
+        allow: '/',
+      },
+      {
+        userAgent: ['facebookexternalhit', 'Twitterbot', 'LinkedInBot', 'WhatsApp'],
+        allow: '/',
+      },
+    ],
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url,
+  };
 }
